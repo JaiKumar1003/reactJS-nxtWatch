@@ -126,16 +126,8 @@ class ContactUs extends Component {
                 isCurrentCategory={isCurrentCategory}
                 key={id}
               >
-                <CategoryBtn type="button" onClick={this.onClickCategoryBtn}>
-                  {icon(isCurrentCategory)}
-                  <CategoryName
-                    isDarkMode={isDarkMode}
-                    isCurrentCategory={isCurrentCategory}
-                    id={id}
-                  >
-                    {name}
-                  </CategoryName>
-                </CategoryBtn>
+                {icon(isCurrentCategory)}
+                {name}
               </CategoryItem>
             </LinkRoute>
           )
