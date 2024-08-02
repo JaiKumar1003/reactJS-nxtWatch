@@ -182,11 +182,16 @@ export const LogoutPopupCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
-  padding-left: 26px;
-  padding-right: 26px;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  width: 80%;
+  height: 40vh;
+  padding: 26px;
+  @media screen and (min-width: 576px) {
+    width: 60%;
+  }
+  @media screen and (min-width: 768px) {
+    width: 40%;
+    height: 40vh;
+  }
 `
 
 export const LogoutPopupCloseBtn = styled.button`
